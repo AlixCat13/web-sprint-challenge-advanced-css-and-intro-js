@@ -23,10 +23,25 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. How would you describe preprocessing to someone new to CSS?
+
+      Preprocessing is a more robust form of css and it allows you to organize and style in ways that vanilla css does not - like nesting, mixins, and escaping - to make your css file better organized. You must use preprocessing in LESS and it will compile a .css file that is a mirror image and match what you code in your .less file. 
+
 2. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+      I like nesting the most because it allows you to better write and organize you code do its not DRY. There weren't really any parts of preprocessing that gave me trouble or caused any issues for me. They all made sense to me. 
+
 3. How would you explain the concept of a variable to someone new to programming?
+
+      A variable allows you to store, change and use data in code. We use LET for variable values we want to re-assign but not change. We use CONST for values we don't want to re-assign or change. 
+
 4. What is the purpose of using functions in code?
+
+      Functions allow developers to repeat sections of code with one line of code. 
+
 5. What is JSON data?
+
+      JSON - JavaScript Object Notion - is a format for storing and transporting data and is used when data is sent from a server to a web page. 
+
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
