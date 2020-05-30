@@ -216,7 +216,7 @@ const artists = [
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 artists[8].name = "Vincent van Gogh";
 console.log(artists[8].name);
-console.log(artists);
+console.log(artists[8]);
 
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
@@ -237,15 +237,16 @@ function getArtistByIndex(id, name) {
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1900-2000) */
 
-function get20s(arr){
-  let newArry = [].years;
-  for (let i = 0; i < arr.length; i++){
-    if (artists[17].years > 1900 && artists[5].years < 2000){
-      console.log(`$(newArry)`);
-    }    
-  }
-}
-console.log(get20s(artists));
+// function get20s(arry){
+//   let newArry = [];
+//   for (let i = 0; i < arry.length; i++){
+//     if (arry[i] > 1900 || arry[i] < 2000) {
+//       console.log(newArry);
+//     } 
+//   }
+// }
+
+// console.log(get20s(artists));
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
@@ -257,7 +258,7 @@ console.log(get20s(artists));
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(arry, index) {
+function removeArtist(artists, num) {
     /* code here */
   }
   
@@ -278,11 +279,11 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should console.log() the new array with information added"*/
 
-function addArtist(/* Code here */){
-
-    /* Code here */
+function addArtist(i, na, y, g, n, b){
+  artists.push("21", "Alix Catalanotto", "1990-2020", "Web Design", "German/Czech", "Lorem Ipsum");
 
   }
+console.log(artists);
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
