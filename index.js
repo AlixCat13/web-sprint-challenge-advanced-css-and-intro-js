@@ -239,15 +239,17 @@ function getArtistByIndex(id, name) {
 
 function get20s(born){
   let newArry = [];
-  for (let i = 0 ; i < 2000 ; i++){
-    if (artists[i].years >= 1900 || artists[i].years <= 2000) {
-      return(newArry);
+  for (let i = 0 ; i < born.length ; i++){
+    if (parseInt(born[i].years) >= 1900 && parseInt(born[i].years) <= 2000) {
+      newArry.push(born[i].name);
     } 
+    
   }
-  console.log(get20s(artists.years));
+    console.log(parseInt(born[0].years));
+     return(newArry);
 }
+     console.log(get20s(artists));
 
-console.log(get20s(1900, 2000));
 
  /* Task 5: Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
@@ -296,7 +298,7 @@ function addArtist(id, name, years, genre, nationality, bio) {
  return(newArtist);
  
 }
-
+console.log(artists);
 console.log(addArtist(21, "Alix Catalanotto", "1990 to 2020", "Web Design", "German/Czech", "Mom, business owner and web dev student at Lambda School."));
 
  /* Task 7: Create a function called lotsOfArt() that takes one argument: 
@@ -307,17 +309,18 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(artists){
+function lotsOfArt(arry){
   let esteemedArtists = [];
-  for (let i = 0 ; i < artists.length ; i++){
-    if (artists[i].paintings > 100){
-      return esteeemedArtists.push(artists[i].name);
-    } 
-    return esteemedArtists;
+  for (let i = 0 ; i < arry.length ; i++){
+    if (arry[i].paintings > 100){
+      esteemedArtists.push(arry[i].name);
+    }     
   }
+
+  return esteemedArtists;
 }
 
-console.log(lotsOfArt(artists.paintings));
+console.log(lotsOfArt(artists));
 
 
 
